@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+:root {
+    --brand: #FEF100;
+    --dark: #232021;
+    --darkTwo : #0a0a0a;
+    --body: #919191;
+    --border: rgba(0,0,0,0.08);
+    --shadow: 0px 6px 30px rgba(0, 0, 0, 0.08);
+    
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    color: var(--body);
+    line-height: 1.7;
+}
+
+h1,h2,h3,h4,h5,h6,
+.display-1,.display-2,.display-3,.display-4 {
+    font-weight: 700;
+    color: var(--dark);
+}
+
+.bg-cover {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+img {
+    width: 100%;
+}
+
+a {
+    color: var(--dark);
+    transition: all 0.4s ease;
+    font-weight: 500;
+}
+
+a:hover {
+    color: var(--darkTwo);
+}
+
+section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.text-brand {
+    color: var(--brand) !important;
+}
+
+/* navbar */
+.navbar {
+    box-shadow: var(--shadow);
+}
+
+.conditions-section{
+    margin: 20px 0;
+}
+.conditions-section a{
+   color: #fff;
+   margin: 0 10px;
+}
+
+.navbar .navbar-nav .nav-link {
+    color: var(--dark);
+    margin-left: 2rem;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+    color: var(--darkTwo);
+    background-color: var(--brand);
+    transform: scale(1.05);
+    padding: 15px;
+   border-radius: 20px;
+   box-shadow: rgba(0,0,0,0.8) 0 0 5px;
+    /* box-shadow: 5px 10px 18px #888888; */
+}
+
+.navbar .navbar-nav .nav-link.active {
+    color: var(--dark);
+    font-weight: bold;
+}
+
+.navbar-brand {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.navbar-brand .dot {
+    color: var(--brand);
+}
+ /* slide */
+ .slide {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+
+.slide2 {
+   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/shake.jpg);
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+}
+
+.slide .display-3 {
+   text-transform: uppercase;
+   color: #fff;
+}
+
+
+.profile img{
+    width: 80%;
+}
+
+    .info-box p {
+        color: var(--dark);
+    }
+   
+
+    .info-box {
+        align-items: center;
+        display: flex;
+    }
+    
+     .info-box img {
+       
+       width: 90px;
+       border-radius: 50%;
+    }
+    
+
+    .profile-card-3 {
+        font-family: 'Open Sans', Arial, sans-serif;
+        position: relative;
+        float: left;
+        overflow: hidden;
+        width: 100%;
+        text-align: center;
+        border:none;
+      }
+      .profile-card-3 .background-block {
+          float: left;
+          width: 100%;
+          height: 230px;
+          overflow: hidden;
+      }
+      .profile-card-3 .background-block .background {
+        width:100%;
+        vertical-align: top;
+        opacity: 0.9;
+        -webkit-filter: blur(0.5px);
+        filter: blur(0.9px);
+      
+      }
+      .profile-card-3 .card-content {
+        width: 100%;
+        padding: 15px 25px;
+        color:#e3dddd;
+        float:left;
+        background: #fbff28;;
+        border-radius:0 0 5px 5px;
+        position: relative;
+        z-index: 10;
+      }
+      .profile-card-3 .card-content::before {
+          content: '';
+          background: #fbff28;
+          width: 120%;
+          height: 100%;
+          left: 11px;
+          bottom: 51px;
+          position: absolute;
+          z-index: -1;
+          transform: rotate(-13deg);
+      }
+      .profile-card-3 .profile {
+        border-radius: 50%;
+        position: absolute;
+        margin-bottom: 30px;
+        bottom: 40%;
+        left: 50%;
+        max-width: 120px;
+        opacity: 1;
+        box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.5);
+        border: 2px solid rgba(255, 255, 255, 1);
+        -webkit-transform: translate(-50%, 0%);
+        transform: translate(-50%, 0);
+        z-index:11;
+      }
+      .profile-card-3 h2 {
+        margin: 0 0 5px;
+        font-weight: 600;
+        font-size:25px;
+        color: #312f3a;
+      }
+      .profile-card-3 h2 small {
+        display: block;
+        font-size: 15px;
+        margin-top:10px;
+        color: #312f3a;
+      }
+      .profile-card-3 .information {
+        display: inline;
+          font-size: 15px;
+          color: #232323;
+   
+      }
+      .profile-card-3 .icon-block{
+    
+        text-align:center;
+          width:100%;
+          margin-top:15px;
+          padding: 0;
+      }
+      .profile-card-3 .iconfill{
+        color: #0a0a0a;
+        
+    }
